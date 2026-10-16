@@ -1,0 +1,198 @@
+{
+  "brand": {
+    "name": "Dra. Camila Meilãn",
+    "fullName": "Camila Meilãn do Nascimento",
+    "description": "Odontologia e Estética",
+    "logo": "assets/images/logo-camila-meilan-transparente.webp",
+    "professionalRegistration": null,
+    "logoWidth": 1170,
+    "logoHeight": 422
+  },
+  "meta": {
+    "title": "Dra. Camila Meilãn — Odontologia e Estética",
+    "description": "Conheça a Dra. Camila Meilãn e sua proposta de cuidado odontológico com escuta, clareza e atenção a você."
+  },
+  "hero": {
+    "firstLine": "Dra. Camila",
+    "secondLine": "Meilãn",
+    "description": "Cuidado odontológico com escuta, clareza e atenção a você.",
+    "action": "Conheça a Dra. Camila",
+    "nextSection": "Um olhar atento para você"
+  },
+  "about": {
+    "label": "Sobre a Dra. Camila",
+    "title": "Antes de cuidar,",
+    "titleEmphasis": "conhecer você.",
+    "paragraphs": [
+      "Cada pessoa chega com dúvidas, expectativas e uma história. Dar espaço a essa conversa é o ponto de partida para um cuidado próximo.",
+      "A proposta da Dra. Camila é ouvir com atenção e conversar com clareza, considerando o que você sente e o que deseja compreender sobre sua saúde bucal."
+    ]
+  },
+  "care": {
+    "label": "O atendimento",
+    "title": "Espaço para perguntar.",
+    "titleEmphasis": "Clareza para compreender.",
+    "intro": "O cuidado também está na forma de conversar. Uma escuta atenta e informações compreensíveis ajudam você a participar dessa conversa.",
+    "items": [
+      {
+        "title": "Escutar a sua história",
+        "description": "Suas experiências, dúvidas e expectativas têm espaço desde o início da conversa."
+      },
+      {
+        "title": "Explicar com clareza",
+        "description": "Informações em palavras simples, com abertura para perguntar e compreender as orientações."
+      },
+      {
+        "title": "Considerar você",
+        "description": "Atenção às suas necessidades e ao que importa para você ao conversar sobre o seu cuidado."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos conversar sobre o seu cuidado.",
+    "description": "Entre em contato para saber mais sobre uma consulta com a Dra. Camila.",
+    "whatsapp": "5511950869006",
+    "phone": null,
+    "email": null,
+    "address": null,
+    "mapsUrl": null,
+    "hours": null,
+    "instagramUrl": null,
+    "message": "Olá! Gostaria de saber mais sobre uma consulta com a Dra. Camila."
+  },
+  "services": {
+    "label": "Serviços",
+    "title": "Cuidado para o seu sorriso,",
+    "titleEmphasis": "em diferentes momentos.",
+    "intro": "Da consulta de rotina às necessidades específicas, conheça os serviços oferecidos e converse com a Dra. Camila sobre o seu cuidado.",
+    "action": "Tire suas dúvidas pelo WhatsApp"
+  },
+  "confirmedTreatments": [
+    {
+      "title": "Clínica geral",
+      "description": "Avaliação da saúde bucal e conversa sobre os cuidados que fazem sentido para você.",
+      "image": {
+        "src": "assets/images/servico-clinico-geral-v2.webp",
+        "smallSrc": "assets/images/servico-clinico-geral-v2-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Dentista conversa com uma paciente durante uma consulta de rotina."
+      }
+    },
+    {
+      "title": "Aparelhos odontológicos",
+      "description": "Avaliação para o uso de aparelho, com espaço para entender as possibilidades de cuidado.",
+      "image": {
+        "src": "assets/images/servico-aparelho.webp",
+        "smallSrc": "assets/images/servico-aparelho-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para aparelhos odontológicos"
+      }
+    },
+    {
+      "title": "Clareamento dental",
+      "description": "Conversa sobre seus objetivos e avaliação para clareamento, considerando cada caso.",
+      "image": {
+        "src": "assets/images/servico-clareamento.webp",
+        "smallSrc": "assets/images/servico-clareamento-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para clareamento dental"
+      }
+    },
+    {
+      "title": "Limpeza dental",
+      "description": "Limpeza profissional e orientações de cuidado para o dia a dia.",
+      "image": {
+        "src": "assets/images/servico-limpeza.webp",
+        "smallSrc": "assets/images/servico-limpeza-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para limpeza dental"
+      }
+    },
+    {
+      "title": "Extração de dentes",
+      "description": "Avaliação da necessidade de extração, com explicações e atenção às suas dúvidas.",
+      "image": {
+        "src": "assets/images/servico-extracao.webp",
+        "smallSrc": "assets/images/servico-extracao-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para extração de dentes"
+      }
+    },
+    {
+      "title": "Tratamento de canal",
+      "description": "Atendimento para tratamento de canal, com clareza sobre as etapas do cuidado.",
+      "image": {
+        "src": "assets/images/servico-canal.webp",
+        "smallSrc": "assets/images/servico-canal-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para tratamento de canal"
+      }
+    },
+    {
+      "title": "Implantes e próteses",
+      "description": "Avaliação das possibilidades de reposição dentária conforme as necessidades de cada pessoa.",
+      "image": {
+        "src": "assets/images/servico-implantes-proteses.webp",
+        "smallSrc": "assets/images/servico-implantes-proteses-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para implantes e próteses"
+      }
+    },
+    {
+      "title": "Lentes em resina",
+      "description": "Avaliação para lentes em resina e conversa sobre seus objetivos estéticos.",
+      "image": {
+        "src": "assets/images/servico-lentes-resina.webp",
+        "smallSrc": "assets/images/servico-lentes-resina-480.webp",
+        "smallWidth": 480,
+        "width": 960,
+        "height": 720,
+        "alt": "Fotografia de apoio para lentes em resina"
+      }
+    }
+  ],
+  "images": {
+    "office": {
+      "src": "assets/images/consultorio-recepcao.webp",
+      "smallSrc": "assets/images/consultorio-recepcao-640.webp",
+      "smallWidth": 640,
+      "width": 1280,
+      "height": 960,
+      "alt": "Recepção do consultório com balcão claro e painel floral."
+    },
+    "hero": {
+      "src": "assets/images/consultorio-atendimento.webp",
+      "smallSrc": "assets/images/consultorio-atendimento-640.webp",
+      "smallWidth": 640,
+      "width": 765,
+      "height": 1020,
+      "alt": "Sala de atendimento odontológico do consultório, com cadeira e iluminação natural."
+    },
+    "professional": {
+      "src": "assets/images/dra-camila-meilan.webp",
+      "width": 350,
+      "height": 560,
+      "alt": "Dra. Camila Meilãn, sorrindo, de óculos e blazer rosa."
+    }
+  },
+  "office": {
+    "label": "O consultório",
+    "title": "Um espaço para",
+    "titleEmphasis": "o seu cuidado.",
+    "description": "Conheça a recepção e o ambiente de atendimento do consultório."
+  }
+}

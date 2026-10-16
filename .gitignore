@@ -1,0 +1,35 @@
+# Dependências e arquivos locais
+node_modules/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+work/
+tmp/
+temp/
+screenshots/
+
+# Credenciais e chaves
+.env
+.env.*
+!.env.example
+credentials*
+secrets*
+*.pem
+*.key
+*.p12
+*.pfx
+*.bak
+
+# Arquivos de ferramentas e hospedagem
+.openai/
+.codex/
+.agents/
+.vercel/
+.netlify/
+.wrangler/
+.idea/
+.vscode/
+*.zip
+*.tar
+*.tar.gz

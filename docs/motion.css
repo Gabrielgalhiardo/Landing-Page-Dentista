@@ -1,0 +1,54 @@
+/* Movimento discreto: entradas únicas e feedback breve de interação. */
+:root{--motion-ease:cubic-bezier(.16,1,.3,1);--whatsapp-mint:#a9edc3;--whatsapp-dark:#1b5b40}
+.motion-reveal{opacity:1;transform:none}
+.motion-reveal.is-entering{animation:content-arrive 700ms var(--motion-ease) var(--motion-delay,0ms) both}
+@keyframes content-arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes content-fade{from{opacity:0}to{opacity:1}}
+.motion-reveal:focus-within{animation:none!important}
+
+/* Os estados de cor são imediatos; apenas transform e opacity se animam. */
+.site-header,.nav-links a,.site-header .main-nav .header-action{transition:none}
+.button,.site-header .main-nav .header-action,.menu-toggle,.back-top,.whatsapp-float{transition:transform 180ms var(--motion-ease)}
+.button svg,.site-header .header-action svg,.whatsapp-float svg,.back-top svg{transition:transform 180ms var(--motion-ease)}
+.menu-icon span{transition:transform 180ms var(--motion-ease)}
+.button:active,.site-header .header-action:active,.menu-toggle:active,.whatsapp-float:active{transform:scale(.98)}
+.whatsapp-icon{color:var(--whatsapp-mint)}
+.whatsapp-float{isolation:isolate;background:var(--whatsapp-dark);color:var(--whatsapp-mint)}
+.whatsapp-float:hover{background:var(--whatsapp-dark)}
+.whatsapp-float::after{content:"";position:absolute;inset:-7px;z-index:-1;border:1px solid var(--whatsapp-mint);border-radius:50%;opacity:0;pointer-events:none}
+.button-light .whatsapp-icon{width:32px;height:32px;padding:6px;border-radius:50%;background:var(--whatsapp-dark)}
+.button:hover .whatsapp-icon{transform:none}
+.hero-photo,.professional-photo,.service-photo,.office-photo{overflow:hidden}
+.professional-photo{border-radius:160px 160px 8px 8px}
+.hero-photo img,.professional-photo img,.service-photo img,.office-photo img{transition:transform 250ms var(--motion-ease)}
+
+@media(hover:hover) and (pointer:fine){
+  .button:hover,.site-header .header-action:hover,.back-top:hover,.whatsapp-float:hover{transform:translateY(-2px)}
+  .button:hover .whatsapp-icon,.site-header .header-action:hover .whatsapp-icon,.whatsapp-float:hover .whatsapp-icon{transform:scale(1.06)}
+  .back-top:hover svg{transform:translateY(-2px)}
+  .hero-photo:hover img,.professional-photo:hover img,.service-photo:hover img,.office-photo:hover img{transform:scale(1.025)}
+}
+@media(prefers-reduced-motion:no-preference){
+  :root:not([data-motion="reduced"]) .whatsapp-float::after{animation:whatsapp-halo 1400ms ease-out 3}
+}
+@keyframes whatsapp-halo{0%{opacity:0;transform:scale(.88)}12%{opacity:.5}78%,100%{opacity:0;transform:scale(1.3)}}
+@media(max-width:1080px){
+  .js .site-header .main-nav.is-open{animation:menu-arrive 200ms var(--motion-ease) both}
+}
+@keyframes menu-arrive{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+/* O mesmo comportamento para a preferência do sistema e o modo QA ?reduce=1. */
+:root[data-motion="reduced"]{scroll-behavior:auto!important}
+:root[data-motion="reduced"] .motion-reveal.is-entering{animation:content-fade 150ms ease-out both!important}
+:root[data-motion="reduced"] .whatsapp-float::after{animation:none!important;opacity:0!important}
+:root[data-motion="reduced"] :is(.button,.header-action,.menu-toggle,.back-top,.whatsapp-float,.button svg,.header-action svg,.whatsapp-float svg,.back-top svg,.menu-icon span,.hero-photo img,.professional-photo img,.service-photo img,.office-photo img){transition:opacity 150ms ease-out!important}
+:root[data-motion="reduced"] :is(.button:hover,.button:active,.header-action:hover,.header-action:active,.menu-toggle:active,.back-top:hover,.whatsapp-float:hover,.whatsapp-float:active,.button:hover svg,.header-action:hover svg,.whatsapp-float:hover svg,.back-top:hover svg,.hero-photo:hover img,.professional-photo:hover img,.service-photo:hover img,.office-photo:hover img){transform:none!important}
+:root[data-motion="reduced"] .site-header .main-nav.is-open{animation:content-fade 150ms ease-out both!important}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  .motion-reveal.is-entering{animation:content-fade 150ms ease-out both!important}
+  .whatsapp-float::after{animation:none!important;opacity:0!important}
+  :is(.button,.header-action,.menu-toggle,.back-top,.whatsapp-float,.button svg,.header-action svg,.whatsapp-float svg,.back-top svg,.menu-icon span,.hero-photo img,.professional-photo img,.service-photo img,.office-photo img){transition:opacity 150ms ease-out!important}
+  :is(.button:hover,.button:active,.header-action:hover,.header-action:active,.menu-toggle:active,.back-top:hover,.whatsapp-float:hover,.whatsapp-float:active,.button:hover svg,.header-action:hover svg,.whatsapp-float:hover svg,.back-top:hover svg,.hero-photo:hover img,.professional-photo:hover img,.service-photo:hover img,.office-photo:hover img){transform:none!important}
+  .js .site-header .main-nav.is-open{animation:content-fade 150ms ease-out both!important}
+}
